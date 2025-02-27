@@ -2,8 +2,8 @@
 
 :root {
     --main-color : #d3ad7f;
-    --black:#13131a;
-    --bg:#010103;
+    --black:#13131a  ;
+    --bg:#24242a  ;
     --boorder: .1rem solid rgba(255,2555,255,.3);
 }
 
@@ -21,7 +21,6 @@
 }
 
 body {
-    background: var(--bg);
     overflow-x: hidden;
     width: 100vw;
 }
@@ -39,7 +38,7 @@ body {
 }
 
 .header {
-    background: var(--bg);
+    background: var(--black);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,7 +144,7 @@ body {
 .home .content h3{
         font-size: 3rem;
         text-transform: uppercase;
-        color: #010103;
+        color: #fff;
 }
 
 .home .content p{
@@ -153,7 +152,7 @@ body {
         font-weight: bold;
         line-height: 1.4;
         padding: 3rem 1rem;
-        color: #080808;
+        color: #fff;
 }
 
 .home .btn{
@@ -161,6 +160,10 @@ body {
 }
 
 /*about*/
+
+.about{
+    background-color: var(--bg);
+}
 
 .heading {
     text-align: center;
@@ -178,7 +181,7 @@ body {
 .about .row {
     display: flex;
     align-items: center;
-    background: var(--black);
+    background: var(--bg);
 }
 
 .about .row .content{
@@ -207,12 +210,21 @@ body {
 .about .row .content p{
     font-size: 1.5rem;
     color: #fff;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     line-height: 1.2;  
 
 }
 
+.about .btn{
+    margin-left: 1rem;
+}
+
 /*menu*/
+
+.menu{
+    background-color: var(--black);
+    padding: 8rem;
+}
 
 .menu .box-containers {
         display: flex;
@@ -239,7 +251,7 @@ body {
 .menu .box-containers .box h3{
         color: #fff;
         font-size: 1.7rem;
-        padding: .5rem ;
+        padding: .5rem 0;
 }
 
 .menu .box-containers .box .price{
@@ -266,6 +278,11 @@ body {
 
 /*workers*/
 
+.workers{
+    background-color: var(--bg);
+    padding-bottom: 8rem;
+}
+
 .workers .box-containers{
     margin: 0 50px;
     display: flex;
@@ -277,7 +294,7 @@ body {
 .workers .box-containers .box{
     width: 31%;
     min-width: 250px;
-    padding: 1rem;
+    padding: 3rem;
     text-align: center;
     border: solid #fff;
     margin: 7px;
@@ -286,7 +303,7 @@ body {
 .workers .box-containers .box p{
         font-size: 1.4rem;
         line-height: 1.2;
-        color: #ccc;
+        color: #fff;
         padding: 2rem 0;
 }
 
@@ -304,6 +321,10 @@ body {
 }
 
    /* review */
+.review{
+    background-color: var(--black);
+    padding-bottom: 8rem;
+}
 
 .review .box-containers{
     margin: 0 50px;
@@ -315,7 +336,7 @@ body {
 .review .box-containers .box{
     width: 31%;
     min-width: 250px;
-    padding: .3rem 1rem;
+    padding: 3rem;
     text-align: center;
     border: solid #fff;
     margin: 7px;
@@ -349,10 +370,14 @@ body {
 
 /*contact*/
 
+.contact{
+    background-color: var(--bg);
+    padding-bottom: 5rem;
+}
+
 .contact .row{
     display: flex;
     align-items: center;
-    background: var(--black);
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -361,7 +386,6 @@ body {
     flex: 1;
     padding: 1rem .7rem;
     text-align: center;
-    width: 100%;
 } 
 
 .contact .row form h3 {
@@ -376,6 +400,7 @@ body {
     margin: 1rem 0;
     background: black;
     border: white solid;
+    width: 90%;
 }
 
    .contact .row form .inputbox span{
@@ -392,15 +417,19 @@ body {
     background: none;
 }
 
+.contact .btn{
+    margin-top: 20px;
+}
+
 /*footer*/
 
 .footer{
-    background: black;
+    background: var(--black);
     text-align: center;
 }
 
 .footer .share{
-   margin: 1rem 0;
+   padding: 1rem 0;
 }
 
 .footer .share a{
@@ -418,13 +447,14 @@ body {
 }
 
 .footer .links{
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .footer .links a{
     padding: .2rem ;
     color: #fff;
     border: var(--boorder);
+    border-radius: 10px;
     font-size: 1.3rem;
     margin: 5px;
     display: inline-block;
